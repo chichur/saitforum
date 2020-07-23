@@ -30,11 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Application definition
 
 INSTALLED_APPS = [
-    'articles.apps.ArticlesConfig',
+    'myfirst.apps.articles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

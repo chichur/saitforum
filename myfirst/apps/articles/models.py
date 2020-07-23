@@ -8,4 +8,4 @@ class Article(models.Model):
 class Comment(models.Model):
     article = models.ForeignKey(Article, on_delete = models.CASCADE)
     article_name = models.CharField('имя автора', max_length= 50)
-    comment_text = models.CharField('текст комментария', max_Length = 200)
+    comment_text = models.CharField('текст комментария', max_length = 200)
